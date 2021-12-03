@@ -1,6 +1,6 @@
 import Main from './main'
 import Modal from './modal'
-import {useState} from 'react';
+import {useState,useEffect} from 'react';
 
 const App = () => { 
   const [state, setState] = useState(false);
@@ -11,6 +11,13 @@ const App = () => {
     setMain(data.main);
     //console.log(mainh);
   }
+  /*useEffect(() => {
+    if(!state){
+      window.scrollTo(0,10);
+      //console.log('hi')
+    }
+    
+  }, [state]);*/
   
   
   
@@ -27,4 +34,4 @@ const App = () => {
   )
 }
 
-export default App
+export default App;

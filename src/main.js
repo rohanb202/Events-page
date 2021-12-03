@@ -3,7 +3,7 @@ import LocomotiveScroll from "locomotive-scroll";
 import "./loco.css";
 //import Contain from "./Contain";
 import { motion } from "framer-motion";
-import { useRef, useEffect } from "react";
+import { useRef, useEffect,useState } from "react";
 //import Loader from "./loader";
 
 const img1 =
@@ -261,10 +261,14 @@ function App(props) {
     cache: 0,
     current: 0,
   });
+  const [sc, setsc] = useState(null)
   useEffect(() => {
     const scrollElement = new LocomotiveScroll({
       el: ref.current,
       smooth: true,
+      smartphone: {
+        smooth: true,
+      },
       
       multiplier: 0.5,
       getDirection: true,
@@ -279,7 +283,7 @@ function App(props) {
       ref2.current.style.transform = `skewY(${clamp(distance, -10, 10)}deg)`;
       ref3.current.style.transform = `skewY(${clamp(-distance, -10, 10)}deg)`;
     });
-  });
+  },[sc]);
   
   const modalSt=(data)=>{      
     props.onData({state:data.state,main:dataMain[data.id-1]});

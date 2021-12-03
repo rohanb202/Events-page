@@ -12,10 +12,10 @@ const Modal = (props) => {
     >
       <div className="bg-black h-screen grid gap-10 md:grid-cols-2 justify-items-center place-content-center ">
         <motion.button
-          className="text-white absolute w-10 m-2 p-2 right-0 top-2"
+          className="text-white absolute w-10 m-2 p-2 right-2 top-2"
           onClick={() => props.onState(false)}
           whileHover={{
-            scale: [1, 2, 2, 1, 1],
+            scale: [1, 1.5, 1.5, 1, 1],
             rotate: [0, 0, 270, 270, 0],
             borderRadius: ["20%", "20%", "50%", "50%", "20%"],
           }}

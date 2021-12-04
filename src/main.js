@@ -3,7 +3,7 @@ import LocomotiveScroll from "locomotive-scroll";
 import "./loco.css";
 //import Contain from "./Contain";
 import { motion } from "framer-motion";
-import { useRef, useEffect,useState } from "react";
+import { useRef, useEffect } from "react";
 //import Loader from "./loader";
 
 const img1 =

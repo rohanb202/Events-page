@@ -43,7 +43,7 @@ const Modal = (props) => {
           <h1 className="text-white font-primary text-center text-3xl md:text-7xl ">
             {props.main.text}
           </h1>
-          <p className="text-white text-center p-2 m-2 md:p-10 md:text-xl ">
+          <p className="text-white text-center p-2 m-2 md:p-10 md:text-xl font-Nunito">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut

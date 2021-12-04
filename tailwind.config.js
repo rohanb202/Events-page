@@ -4,7 +4,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        primary:['Monument Extended']
+        primary:['Monument Extended'],
+        Nunito:['Nunito'],
+        Popins:['Popins'],
+        Ori:['Orbitron'],
+        
       },
       
     }

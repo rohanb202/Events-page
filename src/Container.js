@@ -53,14 +53,16 @@ const Contain = (props) => {
       <motion.h1
         className="text-white font-primary relative text-center bottom-10 text-3xl bg-black p-2 bg-opacity-25 hidden md:block"
         data-scroll
-        variants={textVariant}        
+        variants={textVariant} 
+        onClick={modalLoader}        
       >
         {props.text}
       </motion.h1>
       <motion.h1
         className="text-white font-primary  relative text-center bottom-10 text-3xl bg-black p-2 bg-opacity-25 md:hidden"
         data-scroll
-        variants={textVariant2}       
+        variants={textVariant2} 
+        onClick={modalLoader}       
         
       >
         {props.text}

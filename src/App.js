@@ -1,6 +1,6 @@
 import Main from './main'
 import Modal from './modal'
-import {useState,useEffect} from 'react';
+import {useState} from 'react';
 
 const App = () => { 
   const [state, setState] = useState(false);

@@ -261,7 +261,7 @@ function App(props) {
     cache: 0,
     current: 0,
   });
-  const [sc, setsc] = useState(null)
+  //const [sc, setsc] = useState(null);
   useEffect(() => {
     const scrollElement = new LocomotiveScroll({
       el: ref.current,
@@ -283,7 +283,7 @@ function App(props) {
       ref2.current.style.transform = `skewY(${clamp(distance, -10, 10)}deg)`;
       ref3.current.style.transform = `skewY(${clamp(-distance, -10, 10)}deg)`;
     });
-  },[sc]);
+  },[null]);
   
   const modalSt=(data)=>{      
     props.onData({state:data.state,main:dataMain[data.id-1]});
